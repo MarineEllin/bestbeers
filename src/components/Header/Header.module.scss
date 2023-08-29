@@ -1,0 +1,18 @@
+.headerContainer {
+  background-color: var(--primary);
+  color: var(--light);
+  .headerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    .title {
+      font-size: x-large;
+    }
+    .logo {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}

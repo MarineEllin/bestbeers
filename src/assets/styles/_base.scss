@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: var(--font-familly);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background-color: var(--grey-light);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}

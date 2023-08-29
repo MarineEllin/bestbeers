@@ -1,0 +1,11 @@
+.menuContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid var(--primary-light);
+  border-radius: var(--border-radius);
+  width: 1460px;
+}

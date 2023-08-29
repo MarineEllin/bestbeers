@@ -1,2 +1,8 @@
-// $primary: #53D2FA;
-@import '~@progress/kendo-theme-default/dist/all.scss';
+$kendo-color-primary: #214341;
+$kendo-color-primary-contrast: #ebf2e8;
+$kendo-color-dark: #62625e;
+$kendo-color-light: #ebf2e8;
+$kendo-color-warning: #9c0055;
+$kendo-color-white: #ffffff;
+
+@import "~@progress/kendo-theme-default/dist/all.scss";
