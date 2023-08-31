@@ -5,6 +5,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .homepageContent {
     display: flex;
     flex-direction: column;
@@ -18,6 +22,9 @@
       @include mixin.xs-medium {
         grid-template-columns: 1fr;
       }
+      @include mixin.xs-medium {
+        grid-template-columns: 1fr;
+      }
       @include mixin.large {
         grid-template-columns: repeat(2, 350px);
       }
@@ -26,6 +33,19 @@
       }
       @include mixin.xxl {
         grid-template-columns: repeat(4, 350px);
+      }
+    }
+    .loadMoreBeers {
+      margin: 20px;
+      padding: 20px;
+      background-color: var(--primary-light);
+      border: 1px solid var(--primary-light);
+      color: var(--dark);
+      border-radius: var(--border-radius);
+      transition: 0.5s;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--light);
       }
     }
     .loadMoreBeers {
