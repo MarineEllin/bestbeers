@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Write a test for Header with snapshot 1`] = `
+<div
+  className="headerContainer"
+>
+  <div
+    className="headerContent"
+  >
+    <img
+      alt="logo"
+      className="logo"
+      src="logo.png"
+    />
+  </div>
+</div>
+`;

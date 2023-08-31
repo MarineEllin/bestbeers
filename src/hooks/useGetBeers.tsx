@@ -8,7 +8,7 @@ import {
   pageState,
 } from "recoilStates/atom";
 
-import { Constants } from "constants/constants";
+import getBeers from "./business_logic";
 
 export function useGetBeers(): [boolean, string] {
   const setBeersList = useSetRecoilState(beersListState);
@@ -19,29 +19,15 @@ export function useGetBeers(): [boolean, string] {
   const alcoholFilterValue = useRecoilValue(alcoholFilterValueState);
 
   useEffect(() => {
-    async function getBeers() {
-      try {
-        let queryParam = new URLSearchParams();
-        queryParam.append("abv_gt", `${alcoholFilterValue}`);
-        queryParam.append("ibu_lt", `${bitternessFilter}`);
-        queryParam.append("page", `${page}`);
-        queryParam.append(
-          "per_page",
-          `${Constants.INITIAL_NUMBER_OF_BEERS_DISPLAYED}`
-        );
-        const beers = await getBeersApi(queryParam);
-        if (page > 1) {
-          setBeersList((x) => [...x, ...beers]);
-        } else {
-          setBeersList(beers);
-        }
-      } catch (e) {
-        setError("Error");
-      } finally {
-        setLoading(false);
-      }
-    }
-    getBeers();
+    getBeers({
+      page,
+      bitternessFilter,
+      alcoholFilterValue,
+      setBeersList,
+      setLoading,
+      setError,
+      getBeersApi,
+    });
   }, [page, bitternessFilter, alcoholFilterValue, setBeersList]);
   return [loading, error];
 }
