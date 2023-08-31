@@ -1,11 +1,39 @@
+@use "assets/styles/mixins" as mixin;
+
 .menuContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 0;
+  margin-bottom: 20px;
   padding: 20px;
   border: 1px solid var(--primary-light);
   border-radius: var(--border-radius);
-  width: 1460px;
+  width: 100%;
+  @include mixin.xs-medium {
+    display: flex;
+    flex-direction: column;
+  }
+  .alcoholContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include mixin.xs-medium {
+      margin-bottom: 20px;
+    }
+  }
+  .bitternessContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .filterIcon {
+    color: var(--primary-light);
+    font-size: xx-large;
+    @include mixin.xs-medium {
+      display: none;
+    }
+  }
 }

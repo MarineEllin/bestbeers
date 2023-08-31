@@ -1,6 +1,6 @@
 .headerContainer {
   background-color: var(--primary);
-  color: var(--light);
+  box-shadow: var(--box-shadow);
   .headerContent {
     display: flex;
     flex-direction: row;
