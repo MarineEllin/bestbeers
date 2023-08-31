@@ -10,6 +10,7 @@ export default async function getBeers(context: any) {
       "per_page",
       `${Constants.INITIAL_NUMBER_OF_BEERS_DISPLAYED}`
     );
+
     const beers = await context.getBeersApi(queryParam);
     if (context.page > 1) {
       context.setBeersList((x: any) => [...x, ...beers]);
