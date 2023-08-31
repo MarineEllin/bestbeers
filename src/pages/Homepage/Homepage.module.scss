@@ -9,6 +9,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .homepageContent {
     display: flex;
     flex-direction: column;
@@ -20,6 +24,7 @@
       grid-template-columns: repeat(4, 350px);
       gap: 20px;
       @include mixin.xs-medium {
+      @include mixin.xs-medium {
         grid-template-columns: 1fr;
       }
       @include mixin.xs-medium {
@@ -28,6 +33,7 @@
       @include mixin.large {
         grid-template-columns: repeat(2, 350px);
       }
+      @include mixin.xl {
       @include mixin.xl {
         grid-template-columns: repeat(3, 350px);
       }
