@@ -1,11 +1,11 @@
-import getBeers from "./business_logic";
+import getBeers from "./getBeers";
 import { Constants } from "constants/constants";
 
-test("getBeerApi is correctly called", () => {
+test("getBeerApi is correctly called", async () => {
   let page = 0,
     bitternessFilter = 0,
     alcoholFilterValue = 0,
-    setBeersList = () => {},
+    setBeersList = async () => {},
     setLoading = () => {},
     setError = () => {},
     getBeersApi = () => {
@@ -14,7 +14,7 @@ test("getBeerApi is correctly called", () => {
 
   getBeersApi = jest.fn(getBeersApi);
 
-  getBeers({
+  await getBeers({
     page,
     bitternessFilter,
     alcoholFilterValue,
@@ -38,11 +38,11 @@ test("getBeerApi is correctly called", () => {
   expect(getBeersApi).toHaveBeenCalledWith(expectedQueryParam);
 });
 
-test("setBeerList is correctly filled with page=0", () => {
+test("setBeerList is correctly filled with page=0", async () => {
   let page = 0,
     bitternessFilter = 0,
     alcoholFilterValue = 0,
-    setBeersList = () => {},
+    setBeersList = async () => {},
     setLoading = () => {},
     setError = () => {},
     getBeersApi = () => {
@@ -51,7 +51,7 @@ test("setBeerList is correctly filled with page=0", () => {
 
   setBeersList = jest.fn(setBeersList);
 
-  getBeers({
+  await getBeers({
     page,
     bitternessFilter,
     alcoholFilterValue,
@@ -64,11 +64,11 @@ test("setBeerList is correctly filled with page=0", () => {
   expect(setBeersList).toBeCalledTimes(1);
 });
 
-test("setBeerList is not filled on error", () => {
+test("setBeerList is not filled on error", async () => {
   let page = 0,
     bitternessFilter = 0,
     alcoholFilterValue = 0,
-    setBeersList = () => {},
+    setBeersList = async () => {},
     setLoading = () => {},
     setError = () => {},
     getBeersApi = () => {
@@ -78,7 +78,7 @@ test("setBeerList is not filled on error", () => {
   setBeersList = jest.fn(setBeersList);
   setError = jest.fn(setError);
 
-  getBeers({
+  await getBeers({
     page,
     bitternessFilter,
     alcoholFilterValue,

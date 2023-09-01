@@ -8,11 +8,10 @@ import {
   pageState,
 } from "recoilStates/atom";
 
-import getBeers from "./business_logic";
+import getBeers from "./getBeers";
 
-export function useGetBeers(): [boolean, string] {
+export function useGetBeers(): [string] {
   const setBeersList = useSetRecoilState(beersListState);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const page = useRecoilValue(pageState);
   const bitternessFilter = useRecoilValue(bitternessFilterValueState);
@@ -24,10 +23,9 @@ export function useGetBeers(): [boolean, string] {
       bitternessFilter,
       alcoholFilterValue,
       setBeersList,
-      setLoading,
       setError,
       getBeersApi,
     });
   }, [page, bitternessFilter, alcoholFilterValue, setBeersList]);
-  return [loading, error];
+  return [error];
 }

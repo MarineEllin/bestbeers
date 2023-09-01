@@ -6,7 +6,7 @@ function Beer({ beer }: { beer: BeerObject }) {
   return (
     <div className={styles.beerCard}>
       <div className={styles.imageContainer}>
-        <img src={beer.image_url} alt="" className={styles.image} />
+        <img src={beer.image_url} className={styles.image} />
       </div>
       <div className={styles.infoContainer}>
         <div>

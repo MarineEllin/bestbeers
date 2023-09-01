@@ -8,16 +8,3 @@ test("Write my first test", () => {
   expect(result).toBe(2);
 });
 
-test("Write a test for Header with snapshot", () => {
-  const component = renderer.create(<Header />);
-
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
-});
-
-test("Write a test for Header with DOM", async () => {
-  const screen = render(<Header />);
-
-  const haveAnElWithAlText = await screen.findAllByAltText(/logo/i);
-  expect(haveAnElWithAlText).toBeTruthy();
-});

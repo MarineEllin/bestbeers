@@ -1,91 +1,178 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Write a test for Header with snapshot 1`] = `
-<div
-  className="beerCard"
->
+[
   <div
-    className="imageContainer"
+    className="beerCard"
   >
-    <img
-      alt=""
-      className="image"
-      src="my beer image url"
-    />
-  </div>
-  <div
-    className="infoContainer"
-  >
-    <div>
-      <div
-        className="name"
-      >
-        my beer
-      </div>
-      <div
-        className="descriptionContainer"
-      >
-        <div
-          className="description"
-        >
-          my beer description
-        </div>
-      </div>
-      <div
-        className="food"
-      >
-        <ul>
-          <li>
-            <i
-              className="fa-solid fa-utensils mr-5 font-color-primary-light"
-            />
-            fish
-          </li>
-          <li>
-            <i
-              className="fa-solid fa-utensils mr-5 font-color-primary-light"
-            />
-            chocolate
-          </li>
-        </ul>
-      </div>
+    <div
+      className="imageContainer"
+    >
+      <img
+        className="image"
+        src="my beer image url"
+      />
     </div>
     <div
-      className="indicators"
+      className="infoContainer"
     >
       <div>
         <div
-          className="mb-5"
+          className="name"
         >
-          Bitterness
+          my beer
         </div>
         <div
-          className="bitternessBorderBar"
-          style={
-            {
-              "width": 100,
-            }
-          }
+          className="descriptionContainer"
         >
           <div
-            className="bitternessBar"
-            style={
-              {
-                "width": 30,
-              }
-            }
-          />
+            className="description"
+          >
+            my beer description
+          </div>
+        </div>
+        <div
+          className="food"
+        >
+          <ul>
+            <li>
+              <i
+                className="fa-solid fa-utensils mr-5 font-color-primary-light"
+              />
+              fish
+            </li>
+            <li>
+              <i
+                className="fa-solid fa-utensils mr-5 font-color-primary-light"
+              />
+              chocolate
+            </li>
+          </ul>
         </div>
       </div>
       <div
-        className="alcoholContainer"
+        className="indicators"
       >
         <div>
-          7
-          %
+          <div
+            className="mb-5"
+          >
+            Bitterness
+          </div>
+          <div
+            className="bitternessBorderBar"
+            style={
+              {
+                "width": 100,
+              }
+            }
+          >
+            <div
+              className="bitternessBar"
+              style={
+                {
+                  "width": 30,
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="alcoholContainer"
+        >
+          <div>
+            7
+            %
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </div>,
+  <div
+    className="beerCard"
+  >
+    <div
+      className="imageContainer"
+    >
+      <img
+        className="image"
+        src="my beer image url"
+      />
+    </div>
+    <div
+      className="infoContainer"
+    >
+      <div>
+        <div
+          className="name"
+        >
+          my beer
+        </div>
+        <div
+          className="descriptionContainer"
+        >
+          <div
+            className="description"
+          >
+            my beer description
+          </div>
+        </div>
+        <div
+          className="food"
+        >
+          <ul>
+            <li>
+              <i
+                className="fa-solid fa-utensils mr-5 font-color-primary-light"
+              />
+              fish
+            </li>
+            <li>
+              <i
+                className="fa-solid fa-utensils mr-5 font-color-primary-light"
+              />
+              chocolate
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        className="indicators"
+      >
+        <div>
+          <div
+            className="mb-5"
+          >
+            Bitterness
+          </div>
+          <div
+            className="bitternessBorderBar"
+            style={
+              {
+                "width": 100,
+              }
+            }
+          >
+            <div
+              className="bitternessBar"
+              style={
+                {
+                  "width": 30,
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="alcoholContainer"
+        >
+          <div>
+            7
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
 `;
