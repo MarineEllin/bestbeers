@@ -3,7 +3,7 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 import FilterMenu from "./FilterMenu";
 import { RecoilRoot } from "recoil";
 
-test("Write a test for Header with snapshot", () => {
+test("Write a test for FilterMenu with snapshot", () => {
   const component = renderer.create(
     <RecoilRoot>
       <FilterMenu />

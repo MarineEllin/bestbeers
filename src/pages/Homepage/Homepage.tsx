@@ -19,12 +19,16 @@ function Homepage() {
     <div className={styles.homepageContainer}>
       <div className={styles.homepageContent}>
         <FilterMenu />
-        <div className={styles.grid}>
+        <div data-cy="grid" className={styles.grid}>
           {beersList.map((beer: BeerObject) => (
             <Beer key={beer.id} beer={beer} />
           ))}
         </div>
-        <div onClick={loadMoreBeers} className={styles.loadMoreBeers}>
+        <div
+          data-cy="loadMoreBeersButton"
+          onClick={loadMoreBeers}
+          className={styles.loadMoreBeers}
+        >
           Load more
         </div>
       </div>

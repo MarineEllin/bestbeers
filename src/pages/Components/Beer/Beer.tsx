@@ -4,18 +4,18 @@ import { BeerObject } from "models/beer.model";
 
 function Beer({ beer }: { beer: BeerObject }) {
   return (
-    <div className={styles.beerCard}>
+    <div data-cy="beerCard" className={styles.beerCard}>
       <div className={styles.imageContainer}>
-        <img src={beer.image_url} className={styles.image} />
+        <img src={beer.image_url} alt="beerImage" className={styles.image} />
       </div>
       <div className={styles.infoContainer}>
         <div>
-          <div className={styles.name}>{beer.name}</div>
+          <div data-cy="beerName" className={styles.name}>{beer.name}</div>
           <div className={styles.descriptionContainer}>
-            <div className={styles.description}>{beer.description}</div>
+            <div data-cy="beerDescription" className={styles.description}>{beer.description}</div>
           </div>
 
-          <div className={styles.food}>
+          <div data-cy="foodPairing" className={styles.food}>
             <ul>
               {beer.food_pairing.map((food, index) => (
                 <li key={index}>
@@ -27,7 +27,7 @@ function Beer({ beer }: { beer: BeerObject }) {
           </div>
         </div>
 
-        <div className={styles.indicators}>
+        <div data-cy="indicators" className={styles.indicators}>
           <div>
             <div className="mb-5">Bitterness</div>
             <div

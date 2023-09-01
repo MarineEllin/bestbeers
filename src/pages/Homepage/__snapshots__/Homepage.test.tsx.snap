@@ -12,6 +12,7 @@ exports[`Write a test for Header with snapshot 1`] = `
     >
       <i
         className="filterIcon fa-solid fa-filter"
+        data-cy="filterIcon"
       />
       <div
         className="alcoholContainer"
@@ -214,9 +215,11 @@ exports[`Write a test for Header with snapshot 1`] = `
     </div>
     <div
       className="grid"
+      data-cy="grid"
     />
     <div
       className="loadMoreBeers"
+      data-cy="loadMoreBeersButton"
       onClick={[Function]}
     >
       Load more

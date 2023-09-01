@@ -47,7 +47,7 @@ function FilterMenu() {
 
   return (
     <div className={styles.menuContainer}>
-      <i className={`${styles.filterIcon} fa-solid fa-filter`} />
+      <i className={`${styles.filterIcon} fa-solid fa-filter`} data-cy="filterIcon"/>
       <div className={styles.alcoholContainer}>
         <span className="mr-5">Alcohol by volume </span>
         <Button

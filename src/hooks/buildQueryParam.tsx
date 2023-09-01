@@ -1,6 +1,7 @@
 import { Constants } from "constants/constants";
 import { QueryParamObject } from "models/queryParam.model";
 
+
 export default function buildQueryParam(context: QueryParamObject) {
   let queryParam = new URLSearchParams();
   queryParam.append("abv_gt", `${context.alcoholFilterValue}`);

@@ -4,11 +4,13 @@ exports[`Write a test for Header with snapshot 1`] = `
 [
   <div
     className="beerCard"
+    data-cy="beerCard"
   >
     <div
       className="imageContainer"
     >
       <img
+        alt="beerImage"
         className="image"
         src="my beer image url"
       />
@@ -19,6 +21,7 @@ exports[`Write a test for Header with snapshot 1`] = `
       <div>
         <div
           className="name"
+          data-cy="beerName"
         >
           my beer
         </div>
@@ -27,12 +30,14 @@ exports[`Write a test for Header with snapshot 1`] = `
         >
           <div
             className="description"
+            data-cy="beerDescription"
           >
             my beer description
           </div>
         </div>
         <div
           className="food"
+          data-cy="foodPairing"
         >
           <ul>
             <li>
@@ -52,6 +57,7 @@ exports[`Write a test for Header with snapshot 1`] = `
       </div>
       <div
         className="indicators"
+        data-cy="indicators"
       >
         <div>
           <div
@@ -90,11 +96,13 @@ exports[`Write a test for Header with snapshot 1`] = `
   </div>,
   <div
     className="beerCard"
+    data-cy="beerCard"
   >
     <div
       className="imageContainer"
     >
       <img
+        alt="beerImage"
         className="image"
         src="my beer image url"
       />
@@ -105,6 +113,7 @@ exports[`Write a test for Header with snapshot 1`] = `
       <div>
         <div
           className="name"
+          data-cy="beerName"
         >
           my beer
         </div>
@@ -113,12 +122,14 @@ exports[`Write a test for Header with snapshot 1`] = `
         >
           <div
             className="description"
+            data-cy="beerDescription"
           >
             my beer description
           </div>
         </div>
         <div
           className="food"
+          data-cy="foodPairing"
         >
           <ul>
             <li>
@@ -138,6 +149,7 @@ exports[`Write a test for Header with snapshot 1`] = `
       </div>
       <div
         className="indicators"
+        data-cy="indicators"
       >
         <div>
           <div

@@ -1,11 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Write a test for Header with snapshot 1`] = `
+exports[`Write a test for FilterMenu with snapshot 1`] = `
 <div
   className="menuContainer"
 >
   <i
     className="filterIcon fa-solid fa-filter"
+    data-cy="filterIcon"
   />
   <div
     className="alcoholContainer"
