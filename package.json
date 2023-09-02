@@ -67,7 +67,8 @@
     "build": "react-scripts build",
     "test": "jest",
     "eject": "react-scripts eject",
-    "e2e": "cypress open"
+    "e2e": "cypress open",
+    "e2e-headless": "npx cypress run --headless"
   },
   "eslintConfig": {
     "extends": [
