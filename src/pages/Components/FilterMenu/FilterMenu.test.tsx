@@ -1,5 +1,5 @@
 import renderer from "react-test-renderer";
-import { cleanup, fireEvent, render } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import FilterMenu from "./FilterMenu";
 import { RecoilRoot } from "recoil";
 
