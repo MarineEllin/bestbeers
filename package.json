@@ -97,6 +97,13 @@
     "react-test-renderer": "^18.2.0",
     "sass": "^1.66.1",
     "ts-jest": "^29.1.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "@testing-library/cypress": "9.0.0"
+  },
+  "overrides": {
+    "@testing-library/cypress": {
+      "cypress": "^13.0.0"
+    }
   }
+
 }
